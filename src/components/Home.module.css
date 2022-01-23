@@ -1,6 +1,12 @@
 .home_container {
     background-color: white;
+    padding: 2%;
 }
 h1 {
     font-family: 'Meriweather', sans-serif;
+    color: #3F018A;
+}
+h3 {
+    font-family: 'Meriweather', sans-serif;
+    color: #9582FF;
 }

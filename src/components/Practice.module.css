@@ -1,4 +1,8 @@
 .practice_container {
     background-color: #BBE64E;
     font-family: 'Merriweather', sans-serif;
+    padding: 2%;
+}
+h2 {
+    color: #9582FF;
 }
