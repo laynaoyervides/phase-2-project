@@ -1,0 +1,13 @@
+.device_container {
+    background-color: white;
+    display: flex;
+}
+.input_check{
+     padding: 1%;
+}
+.device_image_render{
+    padding: 1%;
+}
+.output_check{
+    padding: 1%;
+}

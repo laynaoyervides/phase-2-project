@@ -24,7 +24,8 @@
         "name": "Laptop",
         "image": "../api/4.png",
         "inputs": ["button", "keyboard"],
-        "outputs": ["screen", "speaker"]},
+        "outputs": ["screen", "speaker"]
+    },
     {
         "id":5,
         "name": "IoT Refrigerator",
