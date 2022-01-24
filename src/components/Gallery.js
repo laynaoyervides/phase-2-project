@@ -11,6 +11,30 @@ function Gallery (props) {
         inputs: [],
         outputs: []
     })
+
+    function handleChange(event) {
+        setFormData({
+          ...formData,
+          [event.target.name]: event.target.value,
+        });
+      }
+    function handleSubmit(event) {
+        event.preventDefault();
+        fetch("http://localhost:3000/gallery", {
+          method: "POST", 
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(
+            {
+              name: formData.name, 
+              image: formData.image,
+              inputs: formData.inputs,
+              outputs: formData.outputs
+            
+            }),
+          });
+        }
   
   
   
@@ -21,12 +45,12 @@ function Gallery (props) {
        <h2>Add your own device to our class gallery</h2>
         <div className={styles.device_container}>
             <div className="styles.device_image_upload">
-                <ImagePost />
+                <ImagePost formData={formData} handleSubmit={handleSubmit}/>
              <div className="styles.input_form">
-                <InputForm />
+                <InputForm formData={formData} handleSubmit={handleSubmit}/>
             </div>
             <div className="styles.output_form">
-                <OutputForm />
+                <OutputForm formData={formData} handleSubmit={handleSubmit}/>
             </div>
             
         </div>

@@ -1,14 +1,24 @@
 import React from "react";
 import styles from "./DeviceItem.module.css";
 
-function DeviceItem({devices}){
-    const{id, name, inputs, outputs} = devices;
-    
+function DeviceItem({device}){
+    const{id, name, image, inputs, outputs} = device;
+
     return (
         <div className={styles.device_container}>
-            <div className={styles.input_check}>{inputs}</div>
-            <div className={styles.device_image_render}>{image}</div>
-            <div className={styles.output_check}>{outputs}</div>
+            <div className="styles.wordbank">
+              <h3>{inputs}{outputs}</h3>  
+            </div>
+            <div></div>
+            <div className={styles.input_check}>
+                
+                </div>
+            <div className={styles.device_image_render}>
+            <h2>{name}</h2>
+            {image}
+              </div>
+            <div className={styles.output_check}>
+              </div>
         </div>
     );
 }

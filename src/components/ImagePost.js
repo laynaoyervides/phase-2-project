@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styles from "./ImagePost.module.css"
 
-function ImagePost() {
+function ImagePost({formData, handleSubmit}) {
     
     const [image, setImage] = useState({ preview: "", raw: "" });
     
@@ -19,7 +19,7 @@ function ImagePost() {
         const formData = new FormData();
         formData.append("image", image.raw);
     
-        await fetch("http://localhost:3000/devices", {
+        await fetch("http://localhost:3000/gallery", {
           method: "POST",
           headers: {
             "Content-Type": "multipart/form-data"

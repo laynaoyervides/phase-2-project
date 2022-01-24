@@ -16,14 +16,14 @@ function Practice (){
     );
 
     const devicePractice = devices.map( (device) => (
-        <DeviceItem key={device.id} devices={devices} />
+        <DeviceItem key={device.id} device={device} />
       ));
 
     return (
         <div className={styles.practice_container}>
             <h1>Practice</h1>
             <h2>Use the word bank to choose at least three inputs and outputs of the computing device in the middle</h2>
-            {devicePractice}
+            <section>{devicePractice}</section>
             
         </div>
     )
