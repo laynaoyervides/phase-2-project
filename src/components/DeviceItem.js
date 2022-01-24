@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./DeviceItem.module.css";
 
-function DeviceItem({image, inputs, outputs}){
+function DeviceItem({devices}){
+    const{id, name, inputs, outputs} = devices;
+    
     return (
         <div className={styles.device_container}>
             <div className={styles.input_check}>{inputs}</div>

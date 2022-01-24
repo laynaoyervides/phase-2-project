@@ -4,7 +4,21 @@
     padding: 2%;
 }
 .device_container {
-    display:flexbox;
-    justify-content: space-between;
-
+    display:flex;
+    flex-direction: row;
+   
+}
+.device_image_upload {
+    background-color: #BBE64E;
+}
+.input_form {
+    background-color: #BBE64E;
+}
+.outputform{
+    background-color: #BBE64E;
+}
+.add2_gallery {
+    background-color: violet;
+    font-family: 'Merriweather', sans-serif;
+    padding: 1%;
 }

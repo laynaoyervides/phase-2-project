@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./Gallery.module.css"
 import ImagePost from "./ImagePost";
 import InputForm from "./InputForm";
 import OutputForm from "./OutputForm";
 
-function Gallery () {
+function Gallery (props) {
+    const [formData, setFormData] = useState({
+        name: "",
+        image: "",
+        inputs: [],
+        outputs: []
+    })
+  
+  
+  
+  
     return (
     <div className={styles.gallery_container}>
        <h1>Gallery</h1> 
@@ -18,8 +28,10 @@ function Gallery () {
             <div className="styles.output_form">
                 <OutputForm />
             </div>
+            
         </div>
     </div>
+    <button type="submit" className={styles.add2_gallery}>Add to Gallery</button>
     </div>
     );
 }

@@ -16,7 +16,7 @@ function Practice (){
     );
 
     const devicePractice = devices.map( (device) => (
-        <DeviceItem key={device.id} device={device.name} image={device.image} inputs={device.inputs} outputs={device.outputs}/>
+        <DeviceItem key={device.id} devices={devices} />
       ));
 
     return (
