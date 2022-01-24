@@ -3,3 +3,8 @@
     font-family: 'Merriweather', sans-serif;
     padding: 2%;
 }
+.device_container {
+    display:flexbox;
+    justify-content: space-between;
+
+}

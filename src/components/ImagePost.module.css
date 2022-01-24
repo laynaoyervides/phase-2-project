@@ -1,0 +1,10 @@
+.upload_button {
+    background-color: violet;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 20px;
+}
+.image_upload_container {
+    background-color: white;
+    padding: 5%;
+
+}

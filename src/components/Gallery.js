@@ -9,15 +9,17 @@ function Gallery () {
     <div className={styles.gallery_container}>
        <h1>Gallery</h1> 
        <h2>Add your own device to our class gallery</h2>
-       <div className="styles.input_form">
-           <InputForm />
-       </div>
-       <div className="styles.device_image_upload">
-           <ImagePost/>
-       </div>
-       <div className="styles.output_form">
-           <OutputForm />
-       </div>
+        <div className={styles.device_container}>
+            <div className="styles.device_image_upload">
+                <ImagePost />
+             <div className="styles.input_form">
+                <InputForm />
+            </div>
+            <div className="styles.output_form">
+                <OutputForm />
+            </div>
+        </div>
+    </div>
     </div>
     );
 }

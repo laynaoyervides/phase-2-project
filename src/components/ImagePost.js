@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import styles from "./ImagePost.module.css"
 
 function ImagePost() {
     
@@ -12,9 +13,23 @@ function ImagePost() {
           });
         }
       };
+
+      const handleUpload = async e => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append("image", image.raw);
+    
+        await fetch("http://localhost:3000/devices", {
+          method: "POST",
+          headers: {
+            "Content-Type": "multipart/form-data"
+          },
+          body: formData
+        });
+      };
     return (
-        <div>
-            <label>
+        <div className={styles.image_upload_container}>
+            <label htmlFor="upload-button">
             {image.preview ? (
                   <img src={image.preview} alt="dummy" width="300" height="300" />
                  ) : (
@@ -30,10 +45,9 @@ function ImagePost() {
             </label>
             <input type="file"
                     id="upload-button"
-                    style={{ display: "none" }}
                      onChange={handleChange}>
             </input>
-            <button >
+            <button onClick={handleUpload} className={styles.upload_button}>
                 Upload
             </button>
         </div>
