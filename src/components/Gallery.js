@@ -4,7 +4,7 @@ import ImagePost from "./ImagePost";
 import InputForm from "./InputForm";
 import OutputForm from "./OutputForm";
 
-function Gallery (props) {
+function Gallery () {
     const [formData, setFormData] = useState({
         name: "",
         image: "",
@@ -45,12 +45,12 @@ function Gallery (props) {
        <h2>Add your own device to our class gallery</h2>
         <div className={styles.device_container}>
             <div className="styles.device_image_upload">
-                <ImagePost formData={formData} handleSubmit={handleSubmit}/>
+                <ImagePost formData={formData} handleSubmit={handleSubmit} />
              <div className="styles.input_form">
-                <InputForm formData={formData} handleSubmit={handleSubmit}/>
+                <InputForm formData={formData} handleSubmit={handleSubmit} onChange={handleChange}/>
             </div>
             <div className="styles.output_form">
-                <OutputForm formData={formData} handleSubmit={handleSubmit}/>
+                <OutputForm formData={formData} handleSubmit={handleSubmit} onChange={handleChange}/>
             </div>
             
         </div>

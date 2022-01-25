@@ -2,14 +2,15 @@
     background-color: #ECF241;
     font-family: 'Merriweather', sans-serif;
     padding: 2%;
+    text-align: center;
 }
 .device_container {
     display:flex;
-    flex-direction: row;
-   
+    justify-content: center;
 }
 .device_image_upload {
     background-color: #BBE64E;
+    width: 25%;
 }
 .input_form {
     background-color: #BBE64E;
