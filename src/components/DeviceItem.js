@@ -14,7 +14,7 @@ function DeviceItem({device}){
                 
                 </div>
             <div className={styles.device_image_render}>
-            <h2>{name}</h2>
+            <h2>{id}{name}</h2>
             {image}
               </div>
             <div className={styles.output_check}>

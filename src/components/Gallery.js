@@ -44,6 +44,7 @@ function Gallery () {
        <h1>Gallery</h1> 
        <h2>Add your own device to our class gallery</h2>
         <div className={styles.device_container}>
+           <form on onSubmit={handleSubmit}>
             <div className="styles.device_image_upload">
                 <ImagePost formData={formData} handleSubmit={handleSubmit} />
              <div className="styles.input_form">
@@ -52,10 +53,11 @@ function Gallery () {
             <div className="styles.output_form">
                 <OutputForm formData={formData} handleSubmit={handleSubmit} onChange={handleChange}/>
             </div>
-            
-        </div>
+            </div>
+            <br></br>
+            <button type="submit" className={styles.add2_gallery}>Add to Gallery</button>
+            </form>
     </div>
-    <button type="submit" className={styles.add2_gallery}>Add to Gallery</button>
     </div>
     );
 }

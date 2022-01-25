@@ -34,10 +34,7 @@ function ImagePost({formData, handleSubmit}) {
                   <img src={image.preview} alt="dummy" width="300" height="300" />
                  ) : (
                     <>
-                <span className="fa-stack fa-2x mt-3 mb-2">
-                    <i className="fas fa-circle fa-stack-2x" />
-                    <i className="fas fa-store fa-stack-1x fa-inverse" />
-                </span>
+          
                  <h5 className="text-center">Upload your photo</h5>
             </>
             )}
