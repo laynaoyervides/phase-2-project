@@ -4,10 +4,11 @@ import DeviceItem from "./DeviceItem";
 import {devices} from "../api/data";
 
 function Practice (){
-   const deviceItems = devices.map(
+    const deviceItems = devices.map(
        (device) => 
          ( <DeviceItem key={device} device={device} />));
 
+ 
     return (
         <div className={styles.practice_container}>
             <h1>Practice</h1>
