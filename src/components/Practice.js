@@ -1,31 +1,19 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import styles from "./Practice.module.css"
 import DeviceItem from "./DeviceItem"; 
+import {devices} from "../api/data";
 
 function Practice (){
-    //set up varibale in state
-    const [devices, setDevices] = useState([]);
-    //fetch the devices and then assign them to the state variable after the page has loaded
-    useEffect(
-        () =>
-        fetch("http://localhost:3000/db.json")
-        .then (res => res.json())
-        .then ((devices) => {
-            console.log(devices);
-                setDevices(devices);
-            })
-    , [])
-  
+   const deviceItems = devices.map(
+       (device) => 
+         ( <DeviceItem key={device} device={device} />));
 
     return (
         <div className={styles.practice_container}>
             <h1>Practice</h1>
             <h2>Use the word bank to choose at least three inputs and outputs of the computing device in the middle</h2>
             <div>
-                {devices.map((device) => (
-            <DeviceItem 
-                  key={device.id} 
-                 device={device} />))}
+                {deviceItems}
       </div>
         </div>
     )
