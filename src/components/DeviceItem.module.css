@@ -1,13 +1,32 @@
 .device_container {
-    background-color: white;
+    background-color: #dfdfff;
     display: flex;
+    border-radius: 15px;
+    padding: 2%;
+    
 }
 .input_check{
-     padding: 1%;
+     padding: 2%;
+}
+.wordbank {
+    padding: 2%;
 }
 .device_image_render{
     padding: 1%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 40%;
+
 }
 .output_check{
     padding: 1%;
+}
+h2 {
+    text-align: center;
+    font-size: 32px;;
+}
+img {
+    width: 60%;
+    float: center;
+    padding-left: 5%;
 }

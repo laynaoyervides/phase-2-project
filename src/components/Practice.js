@@ -11,7 +11,11 @@ function Practice (){
     return (
         <div className={styles.practice_container}>
             <h1>Practice</h1>
-            <h2>Use the word bank to choose at least three inputs and outputs of the computing device in the middle</h2>
+            <h3>Consider the device on the left. 
+                <br></br>
+                Use the form to guess two inputs and two outputs of the device. 
+                <br></br>
+                Check your work using the 'check' button.</h3>
             <div>
                 {deviceItems}
       </div>

@@ -6,19 +6,17 @@ function DeviceItem({device}){
 
     return (
         <div className={styles.device_container}>
-            <div className="styles.wordbank">
+          <div className={styles.device_image_render}>
+                <h2>{id}. {name}</h2>
+                <img src={image}></img>
+          </div>
+          <div className="styles.wordbank">
               <h3>INPUTS:{inputs} OUTPUTS: {outputs}</h3>  
-            </div>
-            <div></div>
-            <div className={styles.input_check}>
-                
-                </div>
-            <div className={styles.device_image_render}>
-            <h2>{id}.{name}</h2>
-            <img src={image}></img>
-              </div>
-            <div className={styles.output_check}>
-              </div>
+              <form>
+                <label>post two more</label>
+              </form>
+          </div>
+           
         </div>
     );
 }
