@@ -20,7 +20,7 @@ function Gallery () {
       }
     function handleSubmit(event) {
         event.preventDefault();
-        fetch("http://localhost:3000/gallery", {
+        fetch("http://localhost:3000/gallery.json", {
           method: "POST", 
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function Gallery () {
        <h1>Gallery</h1> 
        <h2>Add your own device to our class gallery</h2>
         <div className={styles.device_container}>
-           <form on onSubmit={handleSubmit}>
+           <form onSubmit={handleSubmit}>
             <div className="styles.device_image_upload">
                 <ImagePost formData={formData} handleSubmit={handleSubmit} />
              <div className="styles.input_form">

@@ -4,12 +4,12 @@ import styles from "./ImagePost.module.css"
 function InputForm ({formData, onChange, onSubmit}) {
     return (
         <div className={styles.input_form_container}>
-             <h2>
+             <label>
                  List at least two inputs for your device:
-             </h2>
-             <form onSubmit={onSubmit}>
+             </label>
+           
                 <input type="text" name="inputs" value={formData.inputs} onChange={onChange}></input>
-            </form>
+        
         </div>
     );
 }

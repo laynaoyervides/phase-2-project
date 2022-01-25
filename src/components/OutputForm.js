@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./OutputForm.module.css"
-function OutputForm ({formData, handleSubmit, onChange}) {
+function OutputForm ({formData, onChange}) {
     return (
        <div className={styles.output_form_container}>
-           <h2>
+           <label> 
             List at least two outputs for your device:
-            </h2>
-       <form onSubmit={handleSubmit}>
+            </label>
+      
        <input type="text" name="outputs" value={formData.outputs} onChange={onChange}></input>
-        </form>
+       
         </div>
     );
 }

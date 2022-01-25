@@ -19,7 +19,7 @@ function ImagePost({formData, handleSubmit}) {
         const formData = new FormData();
         formData.append("image", image.raw);
     
-        await fetch("http://localhost:3000/gallery", {
+        await fetch("http://localhost:3000/gallery.json", {
           method: "POST",
           headers: {
             "Content-Type": "multipart/form-data"
