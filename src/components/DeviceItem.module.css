@@ -8,6 +8,7 @@
 
 .answers {
     padding: 2%;
+    margin: 2%;
 }
 .device_image_render{
     padding: 1%;
@@ -16,15 +17,35 @@
     width: 40%;
 
 }
-.output_check{
-    padding: 1%;
+.answers{
+    float: center;
+    padding-left: 5%;
+
 }
 h2 {
     text-align: center;
     font-size: 32px;;
 }
+h3 {
+    text-align: center;
+    font-size: 24px;
+}
 img {
     width: 60%;
     float: center;
     padding-left: 5%;
+}
+textarea {
+    font-family: 'Merriweather', sans-serif;
+    width:100%;
+    padding-left: 10%;
+}
+label {
+    text-align: center;
+}
+button {
+    background-color: violet;
+    padding-left: 2%;
+    font-size: 16px;
+    font-family: 'Merriweather', sans-serif;
 }

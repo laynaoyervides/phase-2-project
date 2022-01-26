@@ -40,7 +40,6 @@ function Gallery () {
           },
           body: JSON.stringify(
             {
-              id: formData.id,
               name: formData.name, 
               image: formData.image,
               inputs: formData.inputs,
@@ -49,9 +48,9 @@ function Gallery () {
             }),
           });
         }
-  
+
   const galleryView = gallery.map ((galleryItem)=> {
-    <GalleryPost galleryItem={galleryItem} galleryId={gallery.id}/>
+    <GalleryPost key={gallery} galleryItem={galleryItem} galleryId={gallery.id}/>
   })
   
   
