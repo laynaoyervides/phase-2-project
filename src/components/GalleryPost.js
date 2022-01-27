@@ -6,7 +6,7 @@ function GalleryPost({galleryItem}) {
     return (
         <div>
             <h2>{name}</h2>
-            <img src={image}></img>
+            <img src={image} alt={name}></img>
             <h3>Inputs: {inputs}</h3>
             <h3>Outputs: {outputs}</h3>
         </div>

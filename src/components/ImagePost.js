@@ -1,7 +1,7 @@
-import React, {useState} from "react";
+import React, { useState} from "react";
 import styles from "./ImagePost.module.css"
 
-function ImagePost({formData, handleSubmit}) {
+function ImagePost({formData}) {
     
     const [image, setImage] = useState({ preview: "", raw: "" });
     
@@ -14,19 +14,20 @@ function ImagePost({formData, handleSubmit}) {
         }
       };
 
-      const handleUpload = async e => {
+     const handleUpload = async e => {
         e.preventDefault();
         const formData = new FormData();
-        formData.append("image", image.raw);
+        formData.append("image", image.raw); }
     
-        await fetch("http://localhost:3000/gallery.json", {
+         
+          fetch("http://localhost:8000/gallery", {
           method: "POST",
           headers: {
             "Content-Type": "multipart/form-data"
           },
           body: formData
-        });
-      };
+        })
+      
     return (
         <div className={styles.image_upload_container}>
             <label htmlFor="upload-button">
@@ -49,5 +50,5 @@ function ImagePost({formData, handleSubmit}) {
             </button>
         </div>
     );
-}
+                 };
 export default ImagePost;

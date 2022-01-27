@@ -3,10 +3,11 @@ import styles from "./Practice.module.css"
 import DeviceItem from "./DeviceItem"; 
 import {devices} from "../api/data";
 
-function Practice (){
-    const deviceItems = devices.map(
+function Practice () {
+
+     const deviceItems = devices.map(
        (device) => 
-         ( <DeviceItem key={device} device={device} />));
+         ( <DeviceItem key={device.id} device={device} />));
 
  
     return (

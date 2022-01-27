@@ -23,3 +23,7 @@
     font-family: 'Merriweather', sans-serif;
     padding: 1%;
 }
+.gallery_render {
+    display: flex;
+}
+

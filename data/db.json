@@ -1,0 +1,48 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "name": "SmartPhone",
+      "image": "./1.png",
+      "inputs": " button , microphone",
+      "outputs": " screen, speaker"
+    },
+    {
+      "id": 2,
+      "name": "Digital Assistant",
+      "image": "./2.png",
+      "inputs": " button, microphone",
+      "outputs": " light, speaker"
+    },
+    {
+      "name": "",
+      "inputs": "sfesdf",
+      "outputs": "sdfsdf",
+      "id": 3
+    },
+    {
+      "name": "smartphone",
+      "inputs": "touchscreen, button",
+      "outputs": "speaker, screen",
+      "id": 4
+    },
+    {
+      "name": "kjljk",
+      "inputs": "lkjlkj",
+      "outputs": "kljljk",
+      "id": 5
+    },
+    {
+      "name": "sdfasdf",
+      "inputs": "sdfasdf",
+      "outputs": "asdfasdf",
+      "id": 6
+    },
+    {
+      "name": "dgdfg",
+      "inputs": "sdfsdf",
+      "outputs": "sdsfd",
+      "id": 7
+    }
+  ]
+}

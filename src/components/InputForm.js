@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ImagePost.module.css"
 
-function InputForm ({formData, onChange, onSubmit}) {
+function InputForm ({formData, onChange}) {
     return (
         <div className={styles.input_form_container}>
              <label>

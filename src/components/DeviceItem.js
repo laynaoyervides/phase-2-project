@@ -22,7 +22,7 @@ function DeviceItem({device}){
         <div className={styles.device_container}>
           <div className={styles.device_image_render}>
                 <h2>{id}. {name}</h2>
-                <img src={image}></img>
+                <img src={image} alt="device"></img>
           </div>
           <div id="itemContainer"className="styles.answers">
               <form onSubmit={handleSubmit}>
