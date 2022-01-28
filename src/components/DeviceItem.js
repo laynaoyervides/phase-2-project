@@ -20,7 +20,7 @@ function DeviceItem({device}){
                 <h2>{id}. {name}</h2>
                 <img src={image} alt="device"></img>
           </div>
-          <div id="itemContainer"className="styles.answers">
+          <div className="styles.answers">
               <form onSubmit={handleSubmit}>
                 <label className="styles.label">
                   <h3>Write your answer here:</h3>
@@ -38,9 +38,11 @@ function DeviceItem({device}){
                 <button className="btn" form="guess" type="submit" value="submit">Check your answer!</button>
               </form>
             <div className="change to state {visibility}">
-              <h3>Here is your answer: {body}
+              <h4>Here is your answer: {body}
               <br></br>
-               Here are possible correct answers: INPUTS:{inputs} OUTPUTS: {outputs}</h3>
+               Here are possible correct answers:
+               <br></br> INPUTS:{inputs} 
+               <br></br>OUTPUTS: {outputs}</h4>
            </div>
           </div>
            

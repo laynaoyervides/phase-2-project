@@ -3,7 +3,8 @@
     display: flex;
     border-radius: 15px;
     padding: 2%;
-    
+    justify-content: center;
+    margin-right: 2%;
 }
 
 .answers {
@@ -20,6 +21,7 @@
 .answers{
     float: center;
     padding-left: 5%;
+    font-size: 20px;
 
 }
 h2 {
@@ -30,6 +32,10 @@ h3 {
     text-align: center;
     font-size: 24px;
 }
+h4 {
+    font-size: 16px;
+    color:#9582FF;
+}
 img {
     width: 60%;
     float: center;
@@ -37,8 +43,9 @@ img {
 }
 textarea {
     font-family: 'Merriweather', sans-serif;
-    width:100%;
+    width:50%;
     padding-left: 10%;
+    margin-bottom: 2px;
 }
 label {
     text-align: center;
@@ -48,4 +55,6 @@ button {
     padding-left: 2%;
     font-size: 16px;
     font-family: 'Merriweather', sans-serif;
+    border-radius: 8px;
+    margin-top: 2%;
 }

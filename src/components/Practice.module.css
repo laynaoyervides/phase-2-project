@@ -3,6 +3,13 @@
     font-family: 'Merriweather', sans-serif;
     padding: 2%;
 }
+.practice_instructions {
+    background-color: #DBE8C4;
+    padding: 2%;
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 h2 {
     color: #9582FF;
 }
