@@ -5,7 +5,7 @@ function InputForm ({formData, onChange}) {
     return (
         <div className={styles.input_form_container}>
              <label>
-                 List at least two inputs for your device:
+                 List at least two inputs for your device : 
              </label>
            
                 <input type="text" name="inputs" value={formData.inputs} onChange={onChange}></input>

@@ -37,6 +37,12 @@
       "inputs": "sdsdf",
       "outputs": "sdfsdf",
       "id": 6
+    },
+    {
+      "name": "Smart car",
+      "inputs": "camera, motion sensors",
+      "outputs": "video, data on screens",
+      "id": 7
     }
   ]
 }

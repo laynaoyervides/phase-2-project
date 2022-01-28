@@ -38,7 +38,10 @@ function DeviceItem({device}){
                 <button className="btn" form="guess" type="submit" value="submit">Check your answer!</button>
               </form>
             <div className="change to state {visibility}">
-              <h4>Here is your answer: {body}
+              <h4>Here is your answer: 
+                <br></br>
+                {body}
+              <br></br>
               <br></br>
                Here are possible correct answers:
                <br></br> INPUTS:{inputs} 

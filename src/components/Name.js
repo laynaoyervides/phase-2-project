@@ -4,7 +4,7 @@ function Name ({formData, onChange}) {
     return (
         <div>
              <label>
-                Name of the Device           
+                Name of the device :           
             </label>
             <input type="text" name="name" value={formData.name} onChange={onChange}></input>
         </div>

@@ -85,7 +85,7 @@ function Gallery () {
            
            <form onSubmit={handleSubmit}>
              <div className="styles.device_image_upload">
-                  <div className={styles.image_upload_container}> 
+                  {/* <div className={styles.image_upload_container}>  */}
                      {/* <label htmlFor="upload-button">
                          {image.preview ? (
                             <img src={image.preview} name="image" value={formData.image.preview} alt="dummy" width="300" height="300" />
@@ -102,7 +102,7 @@ function Gallery () {
                    <button onClick={handleUpload} className={styles.upload_button}>
                          Upload
                    </button> */}
-              </div>        
+              {/* </div>         */}
             <div>
                 <Name formData={formData} onChange={handleChange} />
                 </div>     
