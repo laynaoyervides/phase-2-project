@@ -13,6 +13,7 @@ function Gallery () {
         outputs: ""
     })
   const [gallery, setGallery] = useState([]);
+
   /*const [image, setImage] = useState({ preview: "", raw: "" });
   
  /*  const handleImgChange = e => {
@@ -32,13 +33,11 @@ function Gallery () {
   
 
   useEffect( () =>
-    function getGallery (){
       fetch("http://localhost:8000/gallery")
       .then (res => res.json())
       .then ((galleryItem) => {
               setGallery(galleryItem);
-          });
-        }, []);
+      }),[])
   
 
     function handleChange(event) {
@@ -62,12 +61,16 @@ function Gallery () {
               outputs: formData.outputs
             
             }),
-          });
+          })
+          .then (res => res.json())
+          .then ((data) =>{
+            setGallery([...gallery, data]);
+          })
         }
 
   const galleryView = gallery.map((galleryItem)=> {
     return(
-    <GalleryPost key={gallery} galleryItem={galleryItem}/>
+    <GalleryPost key={galleryItem.id} galleryItem={galleryItem}/>
      );
    })
   

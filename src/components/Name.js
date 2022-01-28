@@ -4,10 +4,9 @@ function Name ({formData, onChange}) {
     return (
         <div>
              <label>
-Name of the Device             </label>
-           
-                <input type="text" name="name" value={formData.name} onChange={onChange}></input>
-        
+                Name of the Device           
+            </label>
+            <input type="text" name="name" value={formData.name} onChange={onChange}></input>
         </div>
     );
 }

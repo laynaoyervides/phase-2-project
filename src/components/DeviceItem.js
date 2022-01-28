@@ -5,18 +5,14 @@ import styles from "./DeviceItem.module.css";
 function DeviceItem({device}){
     const{ id, name, image, inputs, outputs} = device;
     const [body, setBody] = useState ("");
-    
+    // const [visibility, setVisibility] = useState("hidden");
+/* need to add a style to make it visible or not
+*/
     const handleSubmit= (e) => {
       e.preventDefault();
-      const itemContainer = document.getElementById('itemContainer');
-      itemContainer.append(
-        <h3>Here is your answer: {body}
-        <br></br>
-        Here are possible correct answers: INPUTS:{inputs} OUTPUTS: {outputs}</h3>
-      )
+       /* set state  vis*/
       }
     
-      
 
     return (
         <div className={styles.device_container}>
@@ -41,6 +37,11 @@ function DeviceItem({device}){
                 <br></br>
                 <button className="btn" form="guess" type="submit" value="submit">Check your answer!</button>
               </form>
+            <div className="change to state {visibility}">
+              <h3>Here is your answer: {body}
+              <br></br>
+               Here are possible correct answers: INPUTS:{inputs} OUTPUTS: {outputs}</h3>
+           </div>
           </div>
            
         </div>
