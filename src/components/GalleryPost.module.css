@@ -1,0 +1,13 @@
+.gallery_post {
+    background-color: #DFDFFF;
+    width: 25%;
+    padding: 2%;
+    border-radius: 15px;
+    margin: 2%;
+}
+h3 {
+    text-align: left;
+}
+.device_name {
+    color: #3F018A;
+}

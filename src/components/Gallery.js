@@ -5,6 +5,7 @@ import OutputForm from "./OutputForm";
 import GalleryPost from "./GalleryPost";
 import Name from "./Name";
 
+
 function Gallery () {
     const [formData, setFormData] = useState({
         name: "",
@@ -77,9 +78,11 @@ function Gallery () {
   
     return (
      <div className={styles.gallery_container}>
-         <h1>Gallery</h1> 
-         <h2>Add your own device to our class gallery</h2>
+         
          <div className={styles.device_container}>
+         <h1>GALLERY</h1> 
+         <h2>Add your own device to our class gallery</h2>
+           
            <form onSubmit={handleSubmit}>
              <div className="styles.device_image_upload">
                   <div className={styles.image_upload_container}> 
@@ -114,9 +117,9 @@ function Gallery () {
         <button type="submit" className={styles.add2_gallery}>Add to Gallery</button>
       </form>
     </div>
-        <section className="styles.gallery_render">
+        <div className="styles.gallery_render">
          {galleryView}
-        </section>
+        </div>
     </div>
     );
 }

@@ -3,10 +3,14 @@
     font-family: 'Merriweather', sans-serif;
     padding: 2%;
     text-align: center;
+   
 }
 .device_container {
-    display:flex;
     justify-content: center;
+    background-color: #EDF5A3;
+    margin: 2%;
+    border-radius: 15px;
+    padding: 2%;
 }
 .device_image_upload {
     background-color: #BBE64E;
@@ -25,5 +29,11 @@
 }
 .gallery_render {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+h1 {
+   font-size: 40px; 
+}
