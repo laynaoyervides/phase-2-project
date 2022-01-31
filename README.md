@@ -9,7 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Learnin
 ```bash
 pip install phase-two-project
 ```
-## User Interface
+## UI/UX
 ![Learning Inputs and Outputs Demo](/app_preview.gif)
 
 
