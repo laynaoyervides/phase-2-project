@@ -10,7 +10,9 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Learnin
 pip install phase-two-project
 ```
 ## User Interface
-![](React App- 30 January 2022.gif)
+![Learning Inputs and Outputs Demo](/app_preview.gif)
+
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
