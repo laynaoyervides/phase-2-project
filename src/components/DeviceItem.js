@@ -1,18 +1,18 @@
-import React, {useState}from "react";
+import React, {useState} from "react";
 import styles from "./DeviceItem.module.css";
 
 
 function DeviceItem({device}){
     const{ id, name, image, inputs, outputs} = device;
     const [body, setBody] = useState ("");
-    const [answerVisibility, setAnswerVisibility] = useState("hidden");
+    const [answerVisibility, setAnswerVisibility] = useState("false");
 /* need to add a style to make it visible or not
 */
-    const handleSubmit= (e) => {
-      e.preventDefault();
-       /* set state  vis*/
-       setAnswerVisibility("visible");
-      }
+    // const handleSubmit= (e) => {
+    //   e.preventDefault();
+    //    /* set state  vis*/
+    //    setAnswerVisibility("visible");
+    //   }
     
 
     return (
@@ -22,7 +22,7 @@ function DeviceItem({device}){
                 <img src={image} alt="device"></img>
           </div>
           <div className="styles.answers">
-              <form onSubmit={handleSubmit}>
+              <form onClick={() => setAnswerVisibility((s) => !s)}>
                 <label className="styles.label">
                   <h3>Write your answer here:</h3>
                   <br></br>
@@ -40,7 +40,7 @@ function DeviceItem({device}){
               </form>
             
             {/* USE AN INLINE STYLE TO SET VISIBILITY TO STATEFUL PROPERTY */}
-            <div style={{visibility: `${answerVisibility}`}}>
+            <div style={{ visibility: answerVisibility ? "visibility" : "hidden" }}>
               <h4>Here is your answer: 
                 <br></br>
                 {body}
