@@ -14,3 +14,12 @@ h3 {
 img {
     width: 45%; 
 }
+a:link {
+    color: #3F018A;
+}
+a:hover{
+    color: #BBE64E;
+}
+a:visited {
+    color: #9582FF;
+}

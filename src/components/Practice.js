@@ -19,6 +19,7 @@ function Practice () {
                 Use the form to guess two inputs and two outputs of the device. 
                 <br></br>
                 Check your work using the 'check' button.</h3>
+                <h3>When you are done, go to the <a href="./Gallery">Gallery</a> to post your own computing device.</h3>
             </div>
             <div>
                 {deviceItems}
