@@ -1,28 +1,25 @@
-# phase-2-project
-React JS Single Page Application ; project for Flatiron School Phase 2
+## Learning Inputs and Outputs
 
-Project Description from Flatiron School;
+Learning Inputs and Ouputs is a single page application designed for K-8 teachers and students to practice identifying inputs and outputs of common computing devices at the hardware level.
 
-Learning Goals
-Build a React single page application from scratch
-Apply your knowledge of components, props and state management
-Incorporate client-side routing
-Use data from an API
-Introduction
-Now that you've learned the fundamentals of React, it's time to practice and expand your skills by making a React project from scratch!
+## Installation
 
-This assignment is open-ended when it comes to the actual content. You are free to create whatever you'd like, as long as it incorporates the requirements listed in these instructions.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Learning Inputs and Outputs.
 
-Requirements
-You must make a single page application (only one index.html file) using create-react-app
-Your app should use at least 5 components in a way that keeps your code well organized
-There should be at least 3 client-side routes using react-router (Links to an external site.)
-Use a json-server to create a RESTful API for your backend and make both a GET and a POST request to the json server. Additionally, you may choose to incorporate data from an external API but it is not required.
-You should keep your json-server data simple: avoid nested data and associations. You'll learn how to work with more complex data in the next two phases. Focus on the frontend for this project.
-Stretch Goals
-Once you have met the minimum requirements, feel free to explore! These are only the basic requirements — you're free to add on as much stuff as you'd like.
+```bash
+pip install phase-two-project
+```
+## User Interface
+![](React App- 30 January 2022.gif)
 
-Some ideas for stretch goals:
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Incorporate data from an external API. Use this list of APIs (Links to an external site.) if you need some inspiration!
-Add some styling: you're encouraged to write your CSS from scratch, either by using styled-components (Links to an external site.) or writing CSS files and using id/className to style your elements. You can also incorporate a UI framework (like react-bootstrap (Links to an external site.), semantic-ui (Links to an external site.) material-ui (Links to an external site.)) if you prefer.
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+Images were created with Canva and are licensed CC. 0. 
+
+Colors were generated on Adobe Color. 
