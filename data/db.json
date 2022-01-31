@@ -43,6 +43,12 @@
       "inputs": "camera, motion sensors",
       "outputs": "video, data on screens",
       "id": 7
+    },
+    {
+      "name": "asdfsdf",
+      "inputs": "sdfsdf",
+      "outputs": "sdfsdf",
+      "id": 8
     }
   ]
 }

@@ -9,7 +9,8 @@ h1 {
 h3 {
     font-family: 'Meriweather', sans-serif;
     color: #9582FF;
+    text-align: left;
 }
 img {
-    width: 55%;
+    width: 45%; 
 }
